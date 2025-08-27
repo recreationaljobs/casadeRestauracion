@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iglesia Casa de Restauración</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="iglesia.ico" type="image/x-icon">
+
+
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="iglesia.png" alt="Logo Iglesia">
+                <h1>Casa de Restauración</h1>
+            </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#horarios">Horarios</a></li>
+                    <li><a href="#ministerios">Ministerios</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section con Video Vertical y Audio -->
+    <section class="hero" id="inicio">
+        <div class="video-container">
+            <video class="video-background" autoplay loop playsinline muted id="heroVideo">
+                <source src="video.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+        </div>
+        <div class="video-controls">
+            <button id="playPauseBtn"><i class="fas fa-pause"></i></button>
+            <button id="muteUnmuteBtn"><i class="fas fa-volume-up"></i></button>
+        </div>
+        <div class="video-overlay"></div>
+        <div class="container hero-content">
+            <h2>Bienvenidos a la Iglesia Casa de Restauración</h2>
+            <p>Una comunidad de fe donde todos son bienvenidos. Únase a nosotros en nuestro viaje espiritual y encuentre esperanza, amor y propósito.</p>
+            <a href="#horarios" class="btn">Únase a Nuestros Servicios</a>
+        </div>
+    </section>
+
+    <a href="https://wa.me/50588838345" class="whatsapp-float" target="_blank">
+        <img src="whasap.png" alt="WhatsApp">
+    </a>
+
+
+   <!-- Sección Misión y Visión -->
+<section class="objetivo">
+    <!-- Logo visible para toda la sección -->
+    <div class="containerm">
+        <div class="mision">
+            <div class="header">
+                <img src="iglesia.png" alt="Logotipo" class="logo">
+                 <h2>Nuestra Misión</h2>
+            </div>
+            <ul class="itens">
+                <li><strong> Evangelizar</strong></li>
+                <li><strong> Discipular</strong></li>
+                <li><strong> Afirmar (Consolidar)</strong></li>
+                <li><strong> Enviar</strong></li>
+            </ul>
+            <div class="text">
+                    <p class="cita">Mateo 28:19 </p>
+                    <p class="citas">Marcos 16:15</p>
+            </div>
+    
+        </div>
+
+        <div class="vision">
+            <div class="header">
+                <img src="iglesia.png" alt="Logotipo" class="logo">
+                <h2>Nuestra Visión</h2>
+            </div>
+            <div class="parrvision">
+                <p>SER UNA IGLESIA QUE  IMPACTE A LAS FAMILIAS CON EL
+                    MENSAJE RESTAURADOR DEL EVANGELIO.
+                </p>
+            </div>        
+        </div>
+    </div>
+</section>
+
+<section class="lideres">
+        <h2>Líderes de la Iglesia</h2>
+        <div class="lideres-grid">
+           
+            <div class="lider-card1">
+                <img src="/fotos/pas@.jpg" alt="Líder 2">
+               
+            </div>
+            <div class="lider-card2">
+                <img src="/fotos/ft1.jpg" alt="Líder 3">
+               
+            </div>
+
+            <div class="lider-card2">
+                <img src="/fotos/f3.jpg" alt="Líder 3">
+               
+            </div>
+
+              <div class="lider-card2">
+                <img src="/fotos/f5.jpg" alt="Líder 3">
+               
+            </div>
+           
+        </div>
+    </section>
+
+
+    <!-- Galería -->
+    <section class="galeria">
+        <h1> Nuestra Iglesia</h1>
+        <div class="fotos">
+            <img src="fotos/ft.jpg" alt="Evento 1">
+            <img src="fotos/ft2.jpg" alt="Evento 2">
+            <img src="fotos/L.jpg" alt="Evento 3">
+            <img src="f1.jpg" alt="Evento 3">
+            <img src="fotos/f2.jpg" alt="Evento 3">
+            <img src="fotos/f4.jpg" alt="Evento 3">
+            <img src="fotos/ft.jpg" alt="Evento 1">
+            <img src="fotos/ft2.jpg" alt="Evento 2">
+            <img src="fotos/ft.jpg" alt="Evento 1">
+            <img src="fotos/ft2.jpg" alt="Evento 2">
+            <img src="fotos/ft.jpg" alt="Evento 1">
+            <img src="fotos/ft2.jpg" alt="Evento 2">
+          
+            <h2></h2>
+        </div>
+
+     </section>
+
+
+    <!-- Horarios -->
+    <section class="schedule" id="horarios">
+        <div class="container">
+            <div class="section-title">
+                <h2>Horarios de Servicios</h2>
+            </div>
+            <div class="schedule-grid">
+                <div class="schedule-card">
+                    <h3>Dominical</h3>
+                    <p>Domingos: 10:00 AM, 12:00 PM</p>
+                    <p>Únase a nosotros para nuestra celebración principal de la semana.</p>
+                </div>
+                <div class="schedule-card">
+                    <h3>Estudio Bíblico y cultos</h3>
+                    <p>Miércoles: 7:00 PM</p>
+                    <p>Un tiempo para profundizar en las Escrituras y crecer en la fe.</p>
+                </div>
+                <div class="schedule-card">
+                    <h3>Oración Matutina</h3>
+                    <p>Lunes a Viernes: 7:00 AM</p>
+                    <p>Comience su día con oración y reflexión.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ministerios -->
+    <section id="ministerios">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Ministerios</h2>
+            </div>
+            <div class="ministries-grid">
+                <div class="ministry-card">
+                    <div class="ministry-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="ministry-content">
+                        <h3>Ministerio de Jóvenes</h3>
+                        <p>Nuestro ministerio juvenil ofrece un espacio para que los jóvenes crezcan en su fe mientras se conectan con otros.</p>
+                    </div>
+                </div>
+                <div class="ministry-card">
+                    <div class="ministry-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <div class="ministry-content">
+                        <h3>Ministerio de Mujeres</h3>
+                        <p>Una comunidad de apoyo donde las mujeres pueden compartir, aprender y crecer juntas en Cristo.</p>
+                    </div>
+                </div>
+                <div class="ministry-card">
+                    <div class="ministry-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <div class="ministry-content">
+                        <h3>Ministerio de Alabanza</h3>
+                        <p>Únase a nuestro equipo de alabanza y use sus talentos musicales para glorificar a Dios.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    
+
+
+    <!-- Eventos -->
+    <section class="events" id="eventos">
+        <div class="container">
+            <div class="section-title">
+                <h2>Próximos Eventos</h2>
+            </div>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-date">15 Octubre, 2023 - 6:00 PM</div>
+                    <div class="event-content">
+                        <h3>Concierto de Alabanza</h3>
+                        <p>Una noche especial de adoración y alabanza con música inspiradora.</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">22 Octubre, 2023 - Todo el día</div>
+                    <div class="event-content">
+                        <h3>Día de la Familia</h3>
+                        <p>Un día de diversión, comida y actividades para toda la familia.</p>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">5 Noviembre, 2023 - 7:00 PM</div>
+                    <div class="event-content">
+                        <h3>Conferencia de Crecimiento Espiritual</h3>
+                        <p>Aprenda prácticas espirituales para profundizar su relación con Dios.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contacto</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Estamos aquí para servirle</h3>
+                    <div class="contact-details">
+                        <p><span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span> De la Barranca 10 metros hacia abajo</p>
+                        <p><span class="contact-icon"><i class="fas fa-phone"></i></span> +505 8883 8345</p>
+                        <p><span class="contact-icon"><i class="fas fa-envelope"></i></span> info@iglesiacasaderestauracion.com</p>
+                    </div>
+                    <h3>Horario de Oficina</h3>
+                    <p>Lunes a Viernes: 9:00 AM - 5:00 PM</p>
+                    <p>Sábados: 9:00 AM - 12:00 PM</p>
+                </div>
+                <div class="map">
+                    <!-- Reemplaza tu iframe por este -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d1605.6721714588025!2d-86.897596!3d12.434510000000001!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e1!3m2!1ses!2sus!4v1756175521595!5m2!1ses!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Iglesia Casa de Restauración</h3>
+                    <p>Una comunidad de fe comprometida con servir a Dios y a nuestro prójimo.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <p><a href="#inicio">Inicio</a></p>
+                    <p><a href="#horarios">Horarios</a></p>
+                    <p><a href="#ministerios">Ministerios</a></p>
+                    <p><a href="#eventos">Eventos</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Conéctese Con Nosotros</h3>
+                    <div class="social-links">
+                            <!-- Facebook -->
+                            <a href="https://www.facebook.com/share/15tztHurDW/" target="_blank"> 
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/IglesiaCasaDeRestauracion" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+
+                            <!-- YouTube -->
+                            <a href="https://www.youtube.com/c/TU_CANAL" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+
+                            <!-- WhatsApp (chat directo) -->
+                            <a href="https://wa.me/50588838345" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                         </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Iglesia Casa de Restauración. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

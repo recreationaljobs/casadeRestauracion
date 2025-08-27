@@ -1,0 +1,807 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #4a4a4a;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Encabezado */
+        header {
+            background-color: rgba(255, 255, 255, 0.95);
+            color: #4a4a4a;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            
+            padding-right: 12px;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-right: 12px;
+            margin-right: 30px;
+        }
+        
+        .logo h1 {
+            font-size: 2.5rem; /* Aumenta el tamaño de la fuente */
+            width: 100%;       /* Hace que ocupe todo el ancho del contenedor */
+            text-align: left;  /* Alineación, puede ser center si quieres centrar */
+            white-space: nowrap; /* Evita que se divida en varias líneas */
+            color: #6c6c9c;
+        }
+        
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 25px;
+        }
+        
+        nav ul li a {
+            color: #4a4a4a;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+        
+        nav ul li a:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #4a7b9d;
+            transition: width 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #4a7b9d;
+        }
+        
+        nav ul li a:hover:after {
+            width: 100%;
+        }
+        
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #4a7b9d;
+            cursor: pointer;
+        }
+        
+        /* Hero Section con Video Horizontal */
+        .hero {
+            margin: 20px;
+            position: relative;
+            height: 100vh;
+            min-height: 600px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        
+        .containerm {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .mision{
+            background: #b7b8abcc;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+           
+        }
+       
+        .header{
+            display: flex;
+            align-items: center;
+           
+        }
+        .logo{
+            width: 60px;
+            margin-right: 146px;
+        }
+        
+        .itens{
+           padding: 20px;
+           margin-left: 230px;
+           color: #976b29;
+        }
+        .text{
+            display: flex;
+            margin: 10px;
+          
+        }
+        .cita{
+            margin: 10px;
+           padding-left: 120px;
+           
+        }
+        .citas{
+            margin: 10px;
+            padding-left: 80px;
+        }
+        .objetivo {
+           
+            background-color: #fcf8f8;
+        }
+        .vision {
+            background:  #b7b8abcc;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .parrvision{
+          padding-left: 35px;
+            width: 40%;
+            margin: auto;
+            justify-content: center;
+            color: #976b29;
+            text-align: center;
+        }
+       .vision:hover {
+           transform: translateY(-10px);
+           box-shadow: #d35400;cursor: pointer;
+        
+       }
+       .mision:hover{
+           transform: translateY(-10px);
+           box-shadow: #d35400;
+           cursor: pointer;
+       }
+        .video-container {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+        .video-background {
+            margin-left: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+        video{
+            transform: rotate(90deg); /* Gira el video 90 grados */
+            transform-origin: center center; /* Punto de giro */
+            width: 480px;  /* ajusta según necesites */
+            height: auto;
+        }
+        
+        .video-controls {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 50px;
+            display: flex;
+            gap: 10px;
+        }
+        
+        .video-controls button {
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 1.2rem;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s;
+        }
+        
+        .video-controls button:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            
+            z-index: -1;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            padding: 0 20px;
+            z-index: 1;
+        }
+        
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: lightslategray;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            color: lightgray;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #e67e22;
+            color: white;
+            padding: 14px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(230, 126, 34, 0.3);
+        }
+        
+        .btn:hover {
+            background-color: #d35400;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(230, 126, 34, 0.4);
+        }
+        
+        /* Secciones */
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #4a7b9d;
+        }
+        
+        .section-title h2 {
+            font-size: 2.2rem;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: #e67e22;
+        }
+        
+        /* Horarios */
+        .schedule {
+            background-color: white;
+        }
+        
+        .schedule-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .schedule-card {
+            background-color: #f8f9fa;
+            border-radius: 12px;
+            padding: 35px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid #4a7b9d;
+        }
+        
+        .schedule-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .schedule-card h3 {
+            color: #4a7b9d;
+            margin-bottom: 18px;
+            font-size: 1.5rem;
+        }
+        
+        .schedule-card p {
+            margin-bottom: 12px;
+            color: #666;
+        }
+        
+        /* Ministerios */
+        .ministries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .ministry-card {
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s;
+        }
+        
+        .ministry-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .ministry-icon {
+            background-color: #4a7b9d;
+            color: white;
+            font-size: 2.5rem;
+            padding: 25px 0;
+            text-align: center;
+        }
+        
+        .ministry-content {
+            padding: 25px;
+        }
+        
+        .ministry-card h3 {
+            color: #4a7b9d;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        
+        .ministry-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        /* Eventos */
+        .events {
+            background-color: #f0f4f8;
+        }
+        
+        .events-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .event-card {
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s;
+        }
+        
+        .event-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .event-date {
+            background-color: #e67e22;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .event-content {
+            padding: 25px;
+        }
+        
+        .event-card h3 {
+            color: #4a7b9d;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        
+        .event-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        /* Contacto */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+        }
+        
+        .contact-info h3 {
+            color: #4a7b9d;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        .contact-details {
+            margin-bottom: 30px;
+        }
+        
+        .contact-details p {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            color: #555;
+        }
+        
+        .contact-icon {
+            margin-right: 15px;
+            color: #e67e22;
+            font-size: 1.2rem;
+            width: 25px;
+            text-align: center;
+        }
+        
+        .map iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        /* Pie de página */
+        footer {
+            background-color: #4a7b9d;
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 12px;
+            font-size: 1.4rem;
+        }
+        
+        .footer-section h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: #e67e22;
+        }
+        
+        .footer-section p {
+            margin-bottom: 12px;
+            opacity: 0.9;
+        }
+        
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        
+        .footer-section a:hover {
+            opacity: 0.8;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: background-color 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: #e67e22;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            opacity: 0.8;
+        }
+
+
+
+        .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 20px; /* Distancia desde abajo */
+        right: 20px;  /* Distancia desde la derecha */
+        background-color: #fcfdfc;
+        color: #ffffff;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s;
+    }
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-float img {
+    width: 65px; /* Tamaño del icono */
+    height: 65px;
+}
+
+        
+        /* Media Queries para Responsive - Teléfono Móvil */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            
+            .header-content {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            
+            .logo h1 {
+                font-size: 1.4rem;
+            }
+            
+            nav {
+                display: none;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.98);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                z-index: 1000;
+            }
+            
+            nav.active {
+                display: block;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                padding: 20px 0;
+            }
+            
+            nav ul li {
+                margin: 10px 0;
+                text-align: center;
+            }
+            
+            /* Ajustes generales */
+            .container {
+                padding: 0 15px;
+            }
+            
+            /* Hero section con video */
+            .hero {
+                margin: 10px;
+                height: 70vh;
+                min-height: 500px;
+            }
+            
+            .video-background {
+                transform: none;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                margin-left: 0;
+            }
+            
+            .hero-content {
+                padding: 0 15px;
+            }
+            
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .video-controls {
+                bottom: 10px;
+                right: 10px;
+            }
+            
+            /* Sección Misión y Visión */
+            .containerm {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .vision{
+                padding: 15px;
+                margin: auto;  
+            }
+            
+            .mision{
+                padding: 15px;
+                margin: auto;
+            }
+           
+            
+            .mision .header, .vision .header {
+                padding: auto;
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .mision .logo, .vision .logo {
+                margin-right: 0;
+                margin-bottom: 10px;
+                width: 50px;
+                align-self: center;
+            }
+            
+            .itens {
+                margin-left: 85px;
+                padding: 10px;
+                list-style-position: inside;
+            }
+            li{
+                margin-left: 0;
+                padding: 10px;
+                list-style-position: inside;
+                justify-content: center;
+            }
+            
+            .text {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .cita, .citas {
+                padding-left: 0;
+                margin: 5px 0;
+            }
+            
+            .parrvision {
+                width: 100%;
+                padding-left: 0;
+            }
+            
+            /* Horarios */
+            .schedule-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .schedule-card {
+                padding: 20px;
+            }
+            
+            /* Ministerios */
+            .ministries-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            /* Eventos */
+            .events-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            /* Contacto */
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .map iframe {
+                height: 250px;
+            }
+            
+            /* Footer */
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                text-align: center;
+            }
+            
+            .footer-section h3::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .social-links {
+                justify-content: center;
+            }
+        }
+        @media (max-width: 480px) {
+
+    
+            .hero {
+                height: 60vh;
+                min-height: 400px;
+            }
+            
+            .hero h2 {
+                font-size: 1.5rem;
+            }
+            
+            .btn {
+                padding: 10px 25px;
+                font-size: 0.9rem;
+            }
+            
+            .section-title h2 {
+                font-size: 1.6rem;
+            }
+            
+            .event-date, .schedule-card p, .ministry-content p, .event-content p {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .whatsapp-float img {
+        width: 28px;
+        height: 28px;
+    }
+}
